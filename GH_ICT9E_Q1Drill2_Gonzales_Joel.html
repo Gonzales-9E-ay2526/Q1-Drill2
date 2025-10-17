@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Movie Recommendation Form</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Chewy&family=Fascinate&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+
+		body{
+			background-image: url("movies.png");
+			font-family: "Oswald";
+		}
+
+
+		h1{
+			color: black;
+			text-align: center;
+
+		}
+
+		form{
+			
+			background-color:#E2C2C6;
+			width: 50%;
+			padding: 30px;
+			border-radius: 10px;
+			box-shadow: 10px;
+			margin: 10% auto;
+		}
+
+		input[type="text"], [type="email"]{
+			width: 94%;%;
+			padding:20px;
+		}
+
+		input[type="submit"]{
+			width: 100%;
+			padding: 15px;
+			background-color: #B9929F;
+			color: white;
+		}
+
+
+		select{
+			width: 100%;
+			padding: 15px;
+		}
+
+
+		
+	</style>
+
+</head>
+<body>
+
+		<form>
+		<h1>Movie Recommendations Form</h1>
+	
+
+	<fieldset>
+
+	
+		<label>Full Name:</label>
+		<br>
+		<input type="text" name="fullname">
+		<br>
+
+
+		<label>Email:</label>
+		<br>
+		<input type="text" name="email">
+		<br>
+
+		<label>Recommended Movie Title:</label>
+		<br>
+		<input type="text" name="email">
+		<br>
+
+		<label>Why do you recommend it?</label>
+		<br>
+		<textarea cols="96" rows="7" placeholder="Feedback here..."></textarea>
+	
+	</fieldset>
+
+
+	<fieldset>
+
+		<legend>Genres (Select all that apply)</legend>
+		
+		<input type="checkbox" name="Genres" value="Romance">
+		<label>Romance</label>
+
+		<input type="checkbox" name="Genres" value="Horror">
+		<label>Horror</label>
+
+		<input type="checkbox" name="Genres" value="Comedy">
+		<label>Comedy</label>
+
+		<input type="checkbox" name="Genres" value="Fantasy">
+		<label>Fantasy</label>
+
+		<input type="checkbox" name="Genres" value="Drama">
+		<label>Drama</label>
+
+	</fieldset>
+
+	<fieldset>
+		
+		<legend>Rating of the Movie</legend>
+		<input type="radio" name="Rating" value= "1">
+		<label>1</label>
+
+		<input type="radio" name="Rating" value= "2">
+		<label>2</label>
+
+		<input type="radio" name="Rating" value= "3">
+		<label>3</label>
+
+		<input type="radio" name="Rating" value= "4">
+		<label>4</label>
+
+		<input type="radio" name="Rating" value= "5">
+		<label>5</label>
+
+	</fieldset>
+
+	<fieldset>
+		
+		<legend>Where did you watch it?</legend>
+
+			<select id="">
+				<option value="Cinema">Cinema</option>
+				<option value="Online"> Legal website</option>
+				<option value="Pirated">Pirated website</option>
+				<option value="Other">Other</option>
+			</select>
+
+	</fieldset>
+	<br>
+
+	<input type="Submit" value="Submit Recommendation">
+
+
+</form>
+
+</body>
+</html>
